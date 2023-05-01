@@ -1,0 +1,575 @@
+[
+  {
+    "id": 1,
+    "name": "Villa Amalfi",
+    "location": {
+      "province": "Salerno",
+      "latlng": [40.6333, 14.6]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 250,
+    "popularity": 7.5,
+    "description": "A luxurious villa with stunning views of the Amalfi Coast."
+  },
+  {
+    "id": 2,
+    "name": "Villa Tuscany",
+    "location": {
+      "province": "Siena",
+      "latlng": [43.3183, 11.3306]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": false,
+      "parking": true
+    },
+    "price": 70,
+    "popularity": 7,
+    "description": "A beautiful Tuscan villa surrounded by rolling hills and vineyards."
+  },
+  {
+    "id": 3,
+    "name": "Villa Lake Como",
+    "location": {
+      "province": "Como",
+      "latlng": [45.9642, 9.2462]
+    },
+    "amenities": {
+      "pool": false,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 400,
+    "popularity": 6,
+    "description": "A charming villa located on the shores of Lake Como."
+  },
+  {
+    "id": 4,
+    "name": "Villa Amalfi Coast",
+    "location": {
+      "province": "Salerno",
+      "latlng": [40.6333, 14.6022]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 800,
+    "popularity": 9,
+    "description": "A luxurious villa with a breathtaking view of the Amalfi Coast."
+  },
+  {
+    "id": 5,
+    "name": "Villa Toscana",
+    "location": {
+      "province": "Siena",
+      "latlng": [43.3186, 11.3307]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": false,
+      "parking": true
+    },
+    "price": 500,
+    "popularity": 8,
+    "description": "A rustic villa surrounded by rolling hills and vineyards in Tuscany."
+  },
+  {
+    "id": 6,
+    "name": "Villa Capri",
+    "location": {
+      "province": "Naples",
+      "latlng": [40.55, 14.24]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": false
+    },
+    "price": 1200,
+    "popularity": 7,
+    "description": "A luxurious villa on the island of Capri with stunning sea views."
+  },
+  {
+    "id": 8,
+    "name": "Villa Venice",
+    "location": {
+      "province": "Venice",
+      "latlng": [45.4408, 12.3155]
+    },
+    "amenities": {
+      "pool": false,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 300,
+    "popularity": 5,
+    "description": "A cozy villa in the romantic city of Venice, perfect for couples."
+  },
+  {
+    "id": 9,
+    "name": "Villa Lake Garda",
+    "location": {
+      "province": "Verona",
+      "latlng": [45.5918, 10.684]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 600,
+    "popularity": 8,
+    "description": "A spacious villa with a pool and lake view in the beautiful town of Sirmione."
+  },
+  {
+    "id": 10,
+    "name": "Villa Lecce",
+    "location": {
+      "province": "Lecce",
+      "latlng": [40.3571, 18.175]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 500,
+    "popularity": 7,
+    "description": "A beautiful villa in Lecce, known as the 'Florence of the South', with a private pool and garden."
+  },
+  {
+    "id": 11,
+    "name": "Villa Ostuni",
+    "location": {
+      "province": "Brindisi",
+      "latlng": [40.7263, 17.5753]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 800,
+    "popularity": 8,
+    "description": "A luxurious villa in Ostuni, the 'White City', with panoramic views and a large pool."
+  },
+  {
+    "id": 12,
+    "name": "Villa Alberobello",
+    "location": {
+      "province": "Bari",
+      "latlng": [40.7864, 17.2406]
+    },
+    "amenities": {
+      "pool": false,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 400,
+    "popularity": 6,
+    "description": "A charming trullo villa in Alberobello, a UNESCO World Heritage Site, with modern amenities."
+  },
+  {
+    "id": 13,
+    "name": "Villa Gallipoli",
+    "location": {
+      "province": "Lecce",
+      "latlng": [40.0526, 17.9917]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 600,
+    "popularity": 7,
+    "description": "A stylish villa in Gallipoli, a historic seaside town, with a private pool and sea views."
+  },
+  {
+    "id": 14,
+    "name": "Villa Sorrento",
+    "location": {
+      "province": "Naples",
+      "latlng": [40.6259, 14.3754]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 1200,
+    "popularity": 9,
+    "description": "A luxurious villa in Sorrento, with breathtaking views of the Bay of Naples and a large private pool."
+  },
+  {
+    "id": 15,
+    "name": "Villa Taormina",
+    "location": {
+      "province": "Messina",
+      "latlng": [37.8515, 15.2875]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 1500,
+    "popularity": 10,
+    "description": "A stunning villa in Taormina, with panoramic views of the Mediterranean Sea and a private infinity pool."
+  },
+  {
+    "id": 16,
+    "name": "Villa Gallipoli",
+    "location": {
+      "province": "Lecce",
+      "latlng": [40.0526, 17.9917]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 600,
+    "popularity": 7,
+    "description": "A stylish villa in Gallipoli, a historic seaside town, with a private pool and sea views."
+  },
+  {
+    "id": 17,
+    "name": "Villa Ravello",
+    "location": {
+      "province": "Salerno",
+      "latlng": [40.651, 14.61]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 800,
+    "popularity": 8,
+    "description": "A beautiful villa in Ravello, overlooking the Amalfi Coast and with a private pool and garden."
+  },
+  {
+    "id": 18,
+    "name": "Villa Montepulciano",
+    "location": {
+      "province": "Siena",
+      "latlng": [43.0943, 11.7873]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 900,
+    "popularity": 8,
+    "description": "A Tuscan villa in Montepulciano, surrounded by vineyards and with a private pool and outdoor dining area."
+  },
+  {
+    "id": 101,
+    "name": "Villa Sicily",
+    "location": {
+      "province": "Catania",
+      "latlng": [37.5, 15.1]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 700,
+    "popularity": 6,
+    "description": "A beautiful villa in the heart of Sicily with a private pool."
+  },
+  {
+    "id": 102,
+    "name": "Villa Sicily",
+    "location": {
+      "province": "Catania",
+      "latlng": [37.5, 15.1]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 700,
+    "popularity": 6,
+    "description": "A beautiful villa in the heart of Sicily with a private pool."
+  },
+  {
+    "id": 103,
+    "name": "Villa Sicily",
+    "location": {
+      "province": "Catania",
+      "latlng": [37.5, 15.1]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 700,
+    "popularity": 6,
+    "description": "A beautiful villa in the heart of Sicily with a private pool."
+  },
+  {
+    "id": 104,
+    "name": "Villa Sicily",
+    "location": {
+      "province": "Catania",
+      "latlng": [37.5, 15.1]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 700,
+    "popularity": 6,
+    "description": "A beautiful villa in the heart of Sicily with a private pool."
+  },
+
+  {
+    "id": 105,
+    "name": "Villa Sicily",
+    "location": {
+      "province": "Catania",
+      "latlng": [37.5, 15.1]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 700,
+    "popularity": 6,
+    "description": "A beautiful villa in the heart of Sicily with a private pool."
+  },
+  {
+    "id": 106,
+    "name": "Villa Sicily",
+    "location": {
+      "province": "Catania",
+      "latlng": [37.5, 15.1]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 700,
+    "popularity": 6,
+    "description": "A beautiful villa in the heart of Sicily with a private pool."
+  },{
+    "id": 107,
+    "name": "Villa Sicily",
+    "location": {
+      "province": "Catania",
+      "latlng": [37.5, 15.1]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 700,
+    "popularity": 6,
+    "description": "A beautiful villa in the heart of Sicily with a private pool."
+  },
+  {
+    "id": 108,
+    "name": "Villa Sicily",
+    "location": {
+      "province": "Catania",
+      "latlng": [37.5, 15.1]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 700,
+    "popularity": 6,
+    "description": "A beautiful villa in the heart of Sicily with a private pool."
+  },{
+    "id": 109,
+    "name": "Villa Sicily",
+    "location": {
+      "province": "Catania",
+      "latlng": [37.5, 15.1]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 700,
+    "popularity": 6,
+    "description": "A beautiful villa in the heart of Sicily with a private pool."
+  },{
+    "id": 110,
+    "name": "Villa Sicily",
+    "location": {
+      "province": "Catania",
+      "latlng": [37.5, 15.1]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 700,
+    "popularity": 6,
+    "description": "A beautiful villa in the heart of Sicily with a private pool."
+  },{
+    "id": 111,
+    "name": "Villa Sicily",
+    "location": {
+      "province": "Catania",
+      "latlng": [37.5, 15.1]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 700,
+    "popularity": 6,
+    "description": "A beautiful villa in the heart of Sicily with a private pool."
+  },{
+    "id": 112,
+    "name": "Villa Sicily",
+    "location": {
+      "province": "Catania",
+      "latlng": [37.5, 15.1]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 700,
+    "popularity": 6,
+    "description": "A beautiful villa in the heart of Sicily with a private pool."
+  },{
+    "id": 113,
+    "name": "Villa Sicily",
+    "location": {
+      "province": "Catania",
+      "latlng": [37.5, 15.1]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 700,
+    "popularity": 6,
+    "description": "A beautiful villa in the heart of Sicily with a private pool."
+  },
+  {
+    "id": 114,
+    "name": "Villa Sicily",
+    "location": {
+      "province": "Catania",
+      "latlng": [37.5, 15.1]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 700,
+    "popularity": 6,
+    "description": "A beautiful villa in the heart of Sicily with a private pool."
+  },
+  {
+    "id": 115,
+    "name": "Villa Sicily",
+    "location": {
+      "province": "Catania",
+      "latlng": [37.5, 15.1]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 700,
+    "popularity": 6,
+    "description": "A beautiful villa in the heart of Sicily with a private pool."
+  },
+  {
+    "id": 116,
+    "name": "Villa (Sicily low rating)",
+    "location": {
+      "province": "Catania",
+      "latlng": [37.55, 15.15]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 20000,
+    "popularity": 1,
+    "description": "A horrible villa in the heart of Sicily with a shitty pool."
+  },
+  {
+    "id": 117,
+    "name": "Villa (Sicily low rating)",
+    "location": {
+      "province": "Catania",
+      "latlng": [37.55, 15.15]
+    },
+    "amenities": {
+      "pool": true,
+      "wifi": true,
+      "airConditioning": true,
+      "parking": true
+    },
+    "price": 20000,
+    "popularity": 1,
+    "description": "A horrible villa in the heart of Sicily with a shitty pool."
+  }
+]
