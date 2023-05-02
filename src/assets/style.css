@@ -1,0 +1,76 @@
+#app {
+    display: flex;
+    flex-direction: row;
+  }
+ 
+ 
+  #map {
+    height: 100vh;
+    width: 33vw;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+ 
+  .geo-points {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    width: 66vw;
+  }
+ 
+  .geo-points h1 {
+    font-size: 4em;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+ 
+  .geo-points ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+ 
+  .geo-points li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    font-size: 1.2em;
+  }
+ 
+  .geo-points li:hover {
+    background-color: #eee;
+  }
+ 
+  .geo-points li.active {
+    background-color: #ddd;
+  }
+ 
+  .geo-points li div {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+  }
+ 
+  .geo-points li div.pool {
+    background-color: #a6c5d6;
+  }
+ 
+  .geo-points li div.wifi {
+    background-color: #d6a6a6;
+  }
+ 
+  .geo-points li div.air-conditioning {
+    background-color: #a6d6b9;
+  }
+ 
+  .geo-points li div.parking {
+    background-color: #d6cca6;
+  }
+ 
+  .geo-points p {
+    margin: 10px 0 0;
+  }

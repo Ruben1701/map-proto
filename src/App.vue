@@ -3,8 +3,8 @@
     <div class="geo-points">
       <h1>Geo Points</h1>
       <ul>
-        <!-- @mouseover="highlightMarker(villa)" @mouseleave="unhighlightMarker(villa)" @click="centerMapOnMarker(villa)"> -->
-        <li v-for="villa in paginatedVillas" :key="villa.id" >
+        <!--  @click="centerMapOnMarker(villa)"> -->
+        <li v-for="villa in paginatedVillas" :key="villa.id" @mouseover="highlightMarker(villa)" @mouseleave="unhighlightMarker(villa)">
           <strong>{{ villa.name }}</strong><br />
           {{ villa.location.province }}, {{ villa.location.latlng[0] }}, {{ villa.location.latlng[1] }}<br />
           <div class="pool" v-if="villa.amenities.pool">Pool</div>
@@ -16,9 +16,9 @@
         </li>
       </ul>
       <div class="pagination">
-        <button v-if="currentPage > 1" @click="currentPage--">Previous</button>
-        <button v-for="page in pages" :key="page" @click="currentPage = page">{{ page }}</button>
-        <button v-if="currentPage < pageCount" @click="currentPage++">Next</button>
+        <button v-if="currentPage > 1" @click="currentPage--, this.filterVillas()">Previous</button>
+        <button v-for="page in pages" :key="page" @click="currentPage = page, this.filterVillas() ">{{ page }}</button>
+        <button v-if="currentPage < pageCount" @click="currentPage++, this.filterVillas()">Next</button>
       </div>
     </div>
     <div id="map"></div>
@@ -28,6 +28,7 @@
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import villas from '@/assets/villas.json'
+import '@/assets/style.css'
 
 
 export default {
@@ -94,7 +95,7 @@ export default {
         });
 
         marker.on('mouseover', () => {
-          this.map.setView([42.5, 12.5], 7.5);
+          // this.map.setView([42.5, 12.5], 7.5);
           marker.openPopup();
           marker.setStyle({
             radius: 10,
@@ -105,7 +106,7 @@ export default {
         });
 
         marker.on('mouseleave', () => {
-          this.map.setView([42.5, 12.5], 7.5);
+          // this.map.setView([42.5, 12.5], 7.5);
           marker.openPopup();
           marker.setStyle({
             radius: 10,
@@ -167,82 +168,3 @@ export default {
   },
 }
 </script>
-
-
-<style> #app {
-   display: flex;
-   flex-direction: row;
- }
-
-
- #map {
-   height: 100vh;
-   width: 33vw;
-   position: sticky;
-   top: 0;
-   z-index: 1;
- }
-
- .geo-points {
-   background-color: #fff;
-   border: 1px solid #ddd;
-   padding: 10px;
-   border-radius: 5px;
-   width: 66vw;
- }
-
- .geo-points h1 {
-   font-size: 4em;
-   margin-top: 0;
-   margin-bottom: 10px;
- }
-
- .geo-points ul {
-   list-style: none;
-   padding-left: 0;
-   margin: 0;
- }
-
- .geo-points li {
-   padding: 10px;
-   border-bottom: 1px solid #ddd;
-   cursor: pointer;
-   font-size: 2em;
- }
-
- .geo-points li:hover {
-   background-color: #eee;
- }
-
- .geo-points li.active {
-   background-color: #ddd;
- }
-
- .geo-points li div {
-   display: inline-block;
-   margin-right: 10px;
-   padding: 5px;
-   border-radius: 5px;
-   background-color: #f1f1f1;
- }
-
- .geo-points li div.pool {
-   background-color: #a6c5d6;
- }
-
- .geo-points li div.wifi {
-   background-color: #d6a6a6;
- }
-
- .geo-points li div.air-conditioning {
-   background-color: #a6d6b9;
- }
-
- .geo-points li div.parking {
-   background-color: #d6cca6;
- }
-
- .geo-points p {
-   margin: 10px 0 0;
- }
-</style>
