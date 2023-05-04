@@ -1,6 +1,6 @@
 import { createWebHistory, createRouter } from 'vue-router'
-import VillaDetails from '@/components/VillaDetails.vue'
-import VillaList from '@/components/VillaList.vue'
+import VillaDetails from '@/views/VillaDetails.vue'
+import VillaList from '@/views/VillaList.vue'
 
 
 const routes = [
@@ -11,11 +11,11 @@ const routes = [
     component: VillaList,
   },
   {
-    path: '/villa/:id',
+    path: '/villas/:id',
     name: 'villa-details',
     component: VillaDetails,
-    props: true
-  }  
+
+  }
 ];
 
 let router = new createRouter({

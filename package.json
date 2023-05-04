@@ -11,7 +11,9 @@
     "core-js": "^3.8.3",
     "leaflet": "^1.9.3",
     "leaflet-search": "^3.0.9",
-    "vue": "^3.2.13"
+    "ol": "^7.3.0",
+    "vue": "^3.2.13",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
