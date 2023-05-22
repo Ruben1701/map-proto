@@ -20,7 +20,11 @@ const validBeaches = beaches.features.filter(feature => {
 //Read the city data from file
 const cities = JSON.parse(fs.readFileSync('./map-proto/src/poi-tool/data/cities.geojson'));
 
-// Calculate the nearest beach for a villa
+// Read the wine region data from file
+const wineRegions = JSON.parse(fs.readFileSync('./map-proto/src/poi-tool/data/wine-regions.geojson'));
+
+
+// Calculate the nearest beach, wine region, and city for a villa
 function findNearest(villa, pointOfInterest) {
   const villaCoords = turf.point([villa.location.latlng[1], villa.location.latlng[0]]);
 
@@ -30,7 +34,7 @@ function findNearest(villa, pointOfInterest) {
   switch(pointOfInterest) {
 
     case 'beaches':
-      validBeaches.forEach((beach, index) => {
+      validBeaches.forEach(beach => {
         const beachCoords = turf.centroid(beach);
         const distance = turf.distance(villaCoords, beachCoords, { units: 'kilometers' });
         if (distance < nearestDistance) {
@@ -47,8 +51,28 @@ function findNearest(villa, pointOfInterest) {
 
       return nearest;
 
+      case 'wine-region':
+        wineRegions.features.forEach(region => {
+          const regionCoords = turf.centroid(region);
+          const distance = turf.distance(villaCoords, regionCoords, { units: 'kilometers' });
+          if (distance < nearestDistance) {
+            nearestDistance = distance;
+            nearest = {
+              name: region.properties.region_name,
+              grapes: region.properties.grapes,
+              distance: distance,
+              // You can add more properties of the wine region as needed
+              // based on the structure of your wine region GeoJSON file
+              coordinates: region.geometry.coordinates
+            };
+          }
+        });
+        
+        return nearest;
+
+
     case 'cities':
-      cities.features.forEach((city, index) => {
+      cities.features.forEach(city => {
         const cityCoords = turf.centroid(city);
         const distance = turf.distance(villaCoords, cityCoords, { units: 'kilometers' });
         if (distance < nearestDistance) {
@@ -77,11 +101,13 @@ function findNearest(villa, pointOfInterest) {
 const results = villas.map(villa => {
   const nearestBeach = findNearest(villa, 'beaches');
   const nearestCity = findNearest(villa, 'cities')
+  const nearestWineRegion = findNearest(villa, 'wine-region');
   // const nearestCity = 
   return {
     ...villa,
     nearest_City: nearestCity,
-    nearest_beach: nearestBeach
+    nearest_beach: nearestBeach,
+    nearest_wine_region: nearestWineRegion
   };
 });
 

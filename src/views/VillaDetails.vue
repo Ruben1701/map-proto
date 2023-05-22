@@ -24,7 +24,23 @@
         </div>
       </div>
       <div class="map"></div>
-      <div class="POIs"></div>
+      <div class="POIs">
+        <div class="left">
+          <div class="nearest-beach">Nearest beach: {{ villa.nearest_beach.name }} {{ villa.nearest_beach.distance }}km</div>
+        </div>
+        <div class="middle"></div>
+        <div class="centre">
+          <div class="wine-region">{{ villa.nearest_wine_region.name }}
+            <ul>
+              <li v-for="grape in villa.nearest_wine_region.grapes" :key="grape[0]">
+                {{ grape[0] }} - {{ grape[1] }}
+              </li>
+            </ul>
+          </div>
+          
+          
+        </div>
+      </div>
       <p>{{ villa.price }}$</p>
     </div>
     <div id="map" class="detail-map"></div>
@@ -148,7 +164,7 @@ export default {
 }
 
 
-.detail-map{
+.detail-map {
   min-width: 100%;
   max-height: 400px;
 }
